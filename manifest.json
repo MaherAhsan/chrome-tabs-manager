@@ -1,0 +1,21 @@
+{
+	"name": "manage tabs",
+	"version": "0.1",
+	"description": "This extension allow you to manage your tabs",
+	"manifest_version": 3,
+	"background": {
+		"service_worker": "background.js"
+	},
+	"permissions": ["tabs"],
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["popup.js"]
+		}
+	],
+	"sidebar_action": {
+		"css": ["style.css"],
+		"default_title": "Tab manager",
+		"default_panel": "popup.html"
+	}
+}

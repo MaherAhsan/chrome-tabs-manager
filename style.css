@@ -1,0 +1,42 @@
+body {
+	width: auto;
+	height: auto;
+}
+h1 {
+	text-align: center;
+}
+li.active {
+	border: 1px solid rgb(224, 224, 224);
+	background-color: white;
+}
+li.active button {
+	background-color: white;
+}
+li {
+	height: 2rem;
+	list-style: none;
+	margin-left: -2.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1rem;
+	padding: 0%;
+	border-radius: 2rem;
+	background-color: rgb(224, 224, 224);
+	margin-top: 0.5rem;
+}
+
+li button {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	border: none;
+	font-weight: bold;
+	background-color: rgb(224, 224, 224);
+}
+li p {
+	padding: 0 0.5rem;
+	width: 92%;
+	white-space: pre;
+	overflow: hidden;
+}
